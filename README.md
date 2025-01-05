@@ -1,18 +1,18 @@
-NewNotes
+**NewNotes**
 A powerful, user-friendly note-taking app built with Kotlin, XML, and Room Database to ensure a seamless and efficient user experience.
 
-Features
+**Features**
 Create Notes: Easily add new notes to keep track of your thoughts, tasks, and ideas.
 Search Notes: Quickly find notes using the built-in search functionality.
 Delete Notes: Remove notes with a simple action when they're no longer needed.
 Offline Storage: Notes are stored locally using the Room database, ensuring your data is accessible anytime, without internet.
 
-Technologies Used
+**Technologies Used**
 Kotlin: A modern, concise, and safe programming language for Android development.
 XML: For designing a clean, intuitive, and responsive user interface.
 Room Database: For efficient and secure local data storage.
 
-Getting Started
+**Getting Started**
 Clone this repository:
 bash Copy code - git clone https://github.com/your-username/NewNotes.git  
 Open the project in Android Studio.
