@@ -1,0 +1,63 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="note"
+            type="com.example.newnotes.model.Note" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EBEAEA"
+        android:layout_margin="@dimen/_6sdp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/blue_border"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteTitle"
+                android:text="@{note.noteTitle}"
+                android:textColor="#0B0B0B"
+                android:textAlignment="center"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#878686"
+                android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteDesc"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:maxHeight="@dimen/_145sdp"
+                android:text="@{note.noteDescription}"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/poppins"
+                android:textColor="#020202"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
